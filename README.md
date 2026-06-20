@@ -60,16 +60,6 @@ The application implements a custom polling mechanism that continuously monitors
 * OpenAI API key
 * Anakin Wire API credentials
 
-### Installation
-
-```bash
-git clone https://github.com/siddhantmohanty20/Anakin-Blitz-Hackathon.git
-
-cd Anakin-Blitz-Hackathon
-
-npm install
-```
-
 ### Environment Variables
 
 Create a `.env` file in the project root and add:
