@@ -1,0 +1,99 @@
+=========================
+
+Operating System Files
+
+=========================
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+=========================
+
+IDEs and Editors
+
+=========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+.project
+.settings/
+
+=========================
+
+Environment Variables
+
+=========================
+
+Ignores all .env files anywhere in the project (frontend, backend, or root)
+
+/.env
+/.env.local
+/.env.development.local
+/.env.test.local
+/.env.production.local
+*/.env.
+
+=========================
+
+Node.js (Frontend & Backend)
+
+=========================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+=========================
+
+Build Outputs (Vite, Next.js, React)
+
+=========================
+
+dist/
+build/
+out/
+.next/
+/.next/
+*.tsbuildinfo
+
+=========================
+
+Python (If Backend uses Python)
+
+=========================
+
+pycache/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+pip-log.txt
+
+=========================
+
+Testing & Coverage
+
+=========================
+
+coverage/
+.nyc_output/
+
+=========================
+
+Vercel & Deployment
+
+=========================
+
+.vercel/
+.serverless/
