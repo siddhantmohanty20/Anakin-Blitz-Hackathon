@@ -15,8 +15,20 @@ export default function DashboardLayout({
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    // Bypass auth guard for demo: always show dashboard
-    setReady(true);
+    // REAL AUTH GUARD: Check if the user has a valid Supabase session
+    const checkAuth = async () => {
+      const { data } = await supabase.auth.getSession();
+      
+      if (!data.session) {
+        // If no session exists, kick them back to the login page
+        router.push('/');
+      } else {
+        // Only render the dashboard if they are authenticated
+        setReady(true);
+      }
+    };
+    
+    checkAuth();
   }, [router]);
 
   if (!ready) {

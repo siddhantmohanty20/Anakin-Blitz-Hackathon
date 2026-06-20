@@ -105,7 +105,6 @@ export default function Sidebar() {
             </Avatar>
             <div className="min-w-0">
               <p className="text-sm font-medium truncate">{userEmail}</p>
-              <p className="text-xs text-muted-foreground">Free Plan</p>
             </div>
           </div>
           <Button
